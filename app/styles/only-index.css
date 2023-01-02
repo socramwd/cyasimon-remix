@@ -1,0 +1,72 @@
+/* HEADER */
+.header {
+    background-image: url(/build/_assets/bg-index-ZVCSB6FW.jpeg);
+    height: 50vh;
+    background-position: center center;
+    background-size: cover;
+}
+@media(min-width: 992px) {
+    .header {
+        height: 100vh;
+    }
+}
+.barra {
+    background: rgb(242,242,242);
+    background: linear-gradient(135deg, rgba(242,242,242,1) 30%, rgba(204,204,204,1) 100%);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(2,70,255,1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(2,70,255,1);
+    box-shadow: 0px 5px 5px 0px rgba(2,70,255,1);
+    width: 100%;
+}
+
+/* MAIN */
+.contenedor {
+    margin-bottom: 5rem;
+}
+.contenedor h2 {
+    margin-bottom: 0;
+}
+
+/* EMPRESA */
+.empresa {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+@media(min-width: 992px) {
+    .empresa {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .empresa h2 {
+        margin: 0;
+        flex: 0 0 40%;
+    }
+}
+
+/* SERVICIOS */
+.servicios {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* PRESUPUESTO */
+.presupuesto a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.7rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+.presupuesto a:hover {
+    background-color: var(--primary-alt);
+}

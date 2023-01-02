@@ -1,0 +1,137 @@
+.cabecera {
+    background-image: linear-gradient(to right, rgb(0 0 0 / .6), rgb(0 0 0 / .3)), url(../../public/img/servicios.png);
+    background-size: cover;
+    background-position: center center;
+    height: 55rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.cabecera h1 {
+    font-weight: 700;
+    font-size: 7rem;
+    font-family: var(--fuente-secundaria);
+    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: .8rem;
+    position: absolute;
+    left: 50%;
+    bottom: -3rem;
+    margin: 0 0 0 -16.4rem;
+}
+@media (min-width: 768px) {
+    .cabecera h1 {
+        font-size: 10rem;
+        bottom: -4.5rem;
+        margin: 0 0 0 -22.8rem;
+    }
+}
+@media (min-width: 992px) {
+    .cabecera h1 {
+        font-size: 13rem;
+        bottom: -5.5rem;
+        margin: 0 0 0 -28.8rem;
+    }
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin: 5rem auto;
+}
+@media (min-width: 768px) {
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 992px) {
+    .blog {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.post-card {
+    max-width: 80rem;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: transform .5s, box-shadow 1s;
+}
+.post-card:hover {
+    transform: scale(1.02) perspective(0px);
+    box-shadow: 0 10px 10px var(--primary-alt);
+}
+.post-card_contenido {
+    width: 90%;
+    margin: 0 auto;
+}
+.title {
+    text-transform: uppercase;
+    color: var(--primary);
+    width: 90%;
+    margin: 0 auto;
+}
+.title h3 {
+    font-size: 2rem;
+}
+.texto {
+    width: 90%;
+    margin: 0 auto;
+    color: rgb(106, 106, 106);
+}
+.resumen {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    font-size: 1.7rem;
+}
+.separador {
+    border-bottom: 1px solid #ccc;
+}
+.info {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.boton {
+    background-color: var(--primary-alt);
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--white);
+    border-radius: 0.5rem
+}
+.fecha {
+    font-size: 1.5rem;
+    color: var(--primary-alt);
+}
+.fecha:visited {
+    color: var(--primary-alt);
+}
+.post .texto {
+    white-space: pre-wrap;
+}
+
+/* POST */
+.post {
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenido {
+    margin-top: 2rem;
+}
+.contenido h3 {
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: -2px;
+}

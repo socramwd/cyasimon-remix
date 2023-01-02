@@ -1,0 +1,61 @@
+.cabecera {
+    background-image: linear-gradient(to right, rgb(0 0 0 / .6), rgb(0 0 0 / .3)), url(../../public/img/empresa.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 55rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.cabecera h1 {
+    font-weight: 700;
+    font-size: 7rem;
+    font-family: var(--fuente-secundaria);
+    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: .8rem;
+    position: absolute;
+    left: 50%;
+    bottom: -3rem;
+    margin: 0 0 0 -16.4rem;
+}
+@media (min-width: 768px) {
+    .cabecera h1 {
+        font-size: 10rem;
+        bottom: -4.5rem;
+        margin: 0 0 0 -22.8rem;
+    }
+}
+@media (min-width: 992px) {
+    .cabecera h1 {
+        font-size: 13rem;
+        bottom: -5.5rem;
+        margin: 0 0 0 -28.8rem;
+    }
+}
+
+.empresa {
+    text-align: center;
+    margin: 5rem auto;
+}
+.empresa .title h2{
+    font-size: 5rem;
+    font-family: var(--fuente-secundaria);
+    font-weight: 700;
+    color: var(--secundary);
+}
+.empresa .title p,
+.empresa .valores p,
+.empresa .trabajo p  {
+    font-size: 1.8rem;
+}
+.empresa .valores,
+.empresa .trabajo {
+    margin-top: 2rem;
+}
+.empresa .valores h3,
+.empresa .trabajo h3 {
+    color: var(--secundary);
+    font-size: 3.5rem;
+}
